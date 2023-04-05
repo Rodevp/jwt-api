@@ -6,7 +6,7 @@ import dotenv from "dotenv"
 import { connectDb } from "./db"
 import routerAuth from "./routes/auth.routes"
 import routerUser from "./routes/user.routes"
-import { isAuthenticated } from "middlewares/auth"
+import { isAuthenticated } from "./middlewares/auth"
 
 const app = express()
 
