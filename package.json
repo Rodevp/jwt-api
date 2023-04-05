@@ -1,0 +1,25 @@
+{
+  "name": "jwt-api",
+  "version": "1.0.0",
+  "description": "jwt-api",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodevp/jwt-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rodevp/jwt-api/issues"
+  },
+  "homepage": "https://github.com/Rodevp/jwt-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  }
+}
