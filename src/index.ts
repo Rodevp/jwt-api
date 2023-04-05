@@ -6,6 +6,7 @@ import dotenv from "dotenv"
 import { connectDb } from "./db"
 import routerAuth from "./routes/auth.routes"
 import routerUser from "./routes/user.routes"
+import { isAuthenticated } from "middlewares/auth"
 
 const app = express()
 
@@ -20,8 +21,8 @@ app.use( cookieParser() )
 app.use( express.json() )
 
 
-app.use('/api/v1/auth', routerAuth)
-app.use('/api/v1/auth', routerUser)
+app.use('/api/v1/auth', isAuthenticated,routerAuth)
+app.use('/api/v1/auth', isAuthenticated,routerUser)
 
 connectDb()
     .then(() => {
