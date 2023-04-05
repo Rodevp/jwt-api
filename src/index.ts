@@ -19,7 +19,7 @@ app.use( cookieParser() )
 app.use( express.json() )
 
 
-app.use('/api/v1/singin', routerAuth)
+app.use('/api/v1/auth', routerAuth)
 
 connectDb()
     .then(() => {
