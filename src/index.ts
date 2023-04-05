@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser"
 import dotenv from "dotenv"
 import { connectDb } from "./db"
 import routerAuth from "./routes/auth.routes"
+import routerUser from "./routes/user.routes"
 
 const app = express()
 
@@ -20,6 +21,7 @@ app.use( express.json() )
 
 
 app.use('/api/v1/auth', routerAuth)
+app.use('/api/v1/auth', routerUser)
 
 connectDb()
     .then(() => {
